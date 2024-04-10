@@ -1,0 +1,19 @@
+{
+  "main": [
+    {
+      "name": "mastodon",
+      "icon": "FaMastodon",
+      "link": "https://infosec.exchange/@buttercup"
+    },
+    {
+      "name": "github",
+      "icon": "FaGithub",
+      "link": "https://github.com/perry-mitchell"
+    },
+    {
+      "name": "linkedin",
+      "icon": "FaLinkedin",
+      "link": "https://www.linkedin.com/company/vault-garden"
+    }
+  ]
+}
