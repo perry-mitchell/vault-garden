@@ -5,9 +5,9 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "150",
+    "logo": "/images/logo-black.png",
+    "logo_darkmode": "/images/logo-white.png",
+    "logo_width": "175",
     "logo_height": "30",
     "logo_text": "Vault Garden"
   },
@@ -28,13 +28,13 @@
   },
 
   "navigation_button": {
-    "enable": true,
+    "enable": false,
     "label": "Get Started",
     "link": "https://github.com/zeon-studio/astroplate"
   },
 
   "disqus": {
-    "enable": true,
+    "enable": false,
     "shortname": "themefisher-template",
     "settings": {}
   },
