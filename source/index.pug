@@ -1,13 +1,14 @@
-extends layouts/home.pug
+extends layouts/main.pug
 
 block head
     link(rel="stylesheet" href=require("./styles/main.sass"))
 
 block header
-    h1 Vault Garden
+    span Vault Garden
+    //- include components/grid/index
 
-block content
-    p This is the main site.
+//- block content
+//-     p This is the main site.
 
 block footer
     p.small &copy; Vault Garden Oy 2024

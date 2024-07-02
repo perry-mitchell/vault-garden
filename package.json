@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "webpack --config webpack.config.cjs --mode=production",
-    "dev": "concurrently \"npm run build\" \"npm run serve\"",
+    "dev": "concurrently \"npm run build -- -w\" \"npm run serve\"",
     "serve": "sleep 1 && serve -l 5000 --no-port-switching ./dist"
   },
   "private": true,
