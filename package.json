@@ -10,7 +10,7 @@
     "build:web": "webpack --config webpack.config.cjs --mode=production",
     "clean": "rimraf dist",
     "dev": "concurrently \"npm run build:web -- -w\" \"npm run serve\"",
-    "serve": "sleep 1 && serve -l 5000 --no-port-switching ./dist"
+    "serve": "sleep 1 && serve -l 10999 --no-port-switching ./dist"
   },
   "private": true,
   "devDependencies": {
