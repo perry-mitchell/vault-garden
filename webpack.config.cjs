@@ -11,7 +11,7 @@ module.exports = {
                 loader: "ts-loader"
             },
             {
-                test: /\.sass$/,
+                test: /\.s[ac]ss$/,
                 use: ["css-loader", "sass-loader"],
             },
             {
@@ -19,6 +19,13 @@ module.exports = {
                 type: "asset/resource",
                 generator: {
                     filename: "img/[name].[hash:8][ext][query]",
+                },
+            },
+            {
+                test: /\.js$/,
+                type: "asset/resource",
+                generator: {
+                    filename: "3rdparty/[name].[hash:8][ext]",
                 },
             },
         ],
