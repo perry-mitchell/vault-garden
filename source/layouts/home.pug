@@ -4,9 +4,12 @@ html
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
         title Vault Garden
-        //- link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css")
-        //- link(href="https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic" rel="stylesheet" type="text/css")
         link(rel="stylesheet" href=require("../styles/theme/main.scss"))
+        link(rel="manifest" href=require("../media/manifest.json"))
+        link(rel="apple-touch-icon-precomposed" href=require("../media/images/favicon/apple-touch-icon.png"))
+        link(rel="icon" type="image/png" sizes="512x512" href=require("../media/images/favicon/favicon-512x512.png"))
+        link(rel="icon" type="image/png" sizes="152x152" href=require("../media/images/favicon/favicon-152x152.png"))
+        link(rel="icon" href=require("../media/images/favicon/favicon.ico"))
         noscript
             link(rel="stylesheet" href=require("../styles/theme/noscript.scss"))
         block head
@@ -17,13 +20,13 @@ html
                 nav
                     ul
                         li
-                            a(href='#intro') Welcome
+                            a(href="#intro") Welcome
                         li
-                            a(href='#one') Who we are
+                            a(href="#one") Who we are
                         li
-                            a(href='#two') What we do
+                            a(href="#two") What we do
                         li
-                            a(href='#three') Get in touch
+                            a(href="#three") Get in touch
 
         #wrapper
             // Intro
@@ -31,84 +34,102 @@ html
                 .inner
                     h1 Vault Garden
                     p
-                        | The comprehensive web platform design and development
-                        | consultancy. We build highly scalable and secure systems
+                        | The comprehensive web platform development consultancy.
+                        | We build highly scalable and secure systems
                         | for everything from the desktop to the cloud.
                     ul.actions
                         li
-                            a.button.scrolly(href='#one') Learn more
+                            a.button.scrolly(href="#one") Learn more
             // One
             section#one.wrapper.style2.spotlights
                 section
-                    a.image(href='#')
-                        img(src=require("../media/images/pic01.jpg") alt='' data-position='center center')
+                    a.image(href="#")
+                        img(src=require("../media/images/buttercup-512.jpg") alt="" data-position="center center")
                     .content
                         .inner
-                            h2 Sed ipsum dolor
+                            h2 Password Management
                             p
-                                | Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.
+                                strong Buttercup&nbsp;
+                                | is a free, open-source and cross-platform Password Manager available for download on your device.
                             ul.actions
                                 li
-                                    a.button(href='generic.html') Learn more
+                                    a.button(href="https://buttercup.pw" target="_blank") Buttercup.pw
                 section
-                    a.image(href='#')
-                        img(src=require("../media/images/pic02.jpg") alt='' data-position='top center')
+                    a.image(href="#")
+                        img(src=require("../media/images/infrastructure.jpg") alt="" data-position="top center")
                     .content
                         .inner
-                            h2 Feugiat consequat
+                            h2 Cloud Infrastructure and Services
                             p
-                                | Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.
+                                | We build high-quality, scalable and maintainable cloud services for all workloads.
+                                | Not only that, we can also build the surrounding infrastructure on any cloud provider.
                             ul.actions
                                 li
-                                    a.button(href='generic.html') Learn more
+                                    a.button(href="generic.html") Learn more
                 section
-                    a.image(href='#')
-                        img(src=require("../media/images/pic03.jpg") alt='' data-position='25% 25%')
+                    a.image(href="#")
+                        img(src=require("../media/images/applications.jpg") alt="" data-position="25% 25%")
                     .content
                         .inner
-                            h2 Ultricies aliquam
+                            h2 Desktop and Mobile Software
                             p
-                                | Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.
+                                | We architect, build and publish secure and high quality applications for all devices and operating systems.
+                                | Our applications can also be used to extend your cloud offering, or provide a great standalone experience.
                             ul.actions
                                 li
-                                    a.button(href='generic.html') Learn more
+                                    a.button(href="generic.html") Learn more
             // Two
             section#two.wrapper.style3.fade-up
                 .inner
                     h2 What we do
                     p
-                        | Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
+                        | Vault Garden provides a number of different services to help you build and produce your next software project.
                     .features
                         section
-                            span.icon.solid.major.fa-code
-                            h3 Lorem ipsum amet
+                            span.icon.solid.major.fa-server
+                            h3 Web Services
                             p
-                                | Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
+                                | Cloud-based web services designed with security and scalability in mind, using NodeJS with Typescript/JavaScript.
                         section
-                            span.icon.solid.major.fa-lock
-                            h3 Aliquam sed nullam
+                            span.icon.solid.major.fa-sitemap
+                            h3 Cloud Infrastructure
                             p
-                                | Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
-                        section
-                            span.icon.solid.major.fa-cog
-                            h3 Sed erat ullam corper
-                            p
-                                | Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
+                                | Small to large scale multi-cloud infrastructure-as-code, using Terraform/OpenTofu or Puppet.
                         section
                             span.icon.solid.major.fa-desktop
-                            h3 Veroeros quis lorem
+                            h3 Desktop Applications
                             p
-                                | Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
+                                | Attractive, secure and reliable desktop applications built with Electron, NodeJS, React and Typescript/JavaScript.
+                                | Designed to run on Windows, Mac and Linux. Includes code signing and a release/update pipeline.
                         section
-                            span.icon.solid.major.fa-link
-                            h3 Urna quis bibendum
+                            span.icon.solid.major.fa-mobile
+                            h3 Mobile Applications
                             p
-                                | Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
+                                | Intuitive and powerful mobile applications for iOS and Android using React Native, Tamagui, Objective-C and Java.
                         section
-                            span.icon.major.fa-gem
-                            h3 Aliquam urna dapibus
+                            span.icon.solid.major.fa-hammer
+                            h3 Websites, Widgets and Web Utilities
                             p
-                                | Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
+                                | Minimal purpose-built websites, widgets and dashboards for a variety of use-cases.
+                                | Custom-built non-graphical utilities connected to custom cloud infrastructure.
+                        section
+                            span.icon.major.fa-chart-bar
+                            h3 Telemetry and Monitoring
+                            p
+                                | Collect, process and display logs and metrics from any application, at any scale, using Open Telemetry, Prometheus,
+                                | OpenSearch, S3 etc.
+                        section
+                            span.icon.solid.major.fa-user-lock
+                            h3 Debugging, Load Testing and Penetration Testing
+                            p
+                                | Test your stack's stability, reliability and security against our range of techniques designed to expose weaknesses
+                                | in your application's design and deployment.
+                        section
+                            span.icon.solid.major.fa-hat-wizard
+                            h3 General Consulting
+                            p
+                                | Want to discuss an idea, plan a new feature or get help regarding an elusive issue? We're available to talk you through
+                                | such scenarios.
                     ul.actions
                         li
                             a.button(href='generic.html') Learn more
@@ -117,7 +138,7 @@ html
                 .inner
                     h2 Get in touch
                     p
-                        | Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
+                        | Reach out to us for a quote or a chat, or find us on various media.
                     .split.style1
                         section
                             form(method='post' action='#')
@@ -139,35 +160,24 @@ html
                                 li
                                     h3 Address
                                     span
-                                        | 12345 Somewhere Road #654
+                                        | 60° 9' 0.3168" N
                                         br
-                                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Nashville, TN 00000-0000
-                                        br
-                                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;USA
-                                li
-                                    h3 Email
-                                    a(href='#') user@untitled.tld
-                                li
-                                    h3 Phone
-                                    span (000) 000-0000
+                                        | 24° 39' 19.8072" E
                                 li
                                     h3 Social
                                     ul.icons
                                         li
-                                            a.icon.brands.fa-twitter(href='#')
-                                                span.label Twitter
-                                        li
-                                            a.icon.brands.fa-facebook-f(href='#')
-                                                span.label Facebook
-                                        li
-                                            a.icon.brands.fa-github(href='#')
+                                            a.icon.brands.fa-github(href="https://github.com/perry-mitchell")
                                                 span.label GitHub
                                         li
-                                            a.icon.brands.fa-instagram(href='#')
-                                                span.label Instagram
-                                        li
-                                            a.icon.brands.fa-linkedin-in(href='#')
+                                            a.icon.brands.fa-linkedin-in(href="https://www.linkedin.com/company/vault-garden/")
                                                 span.label LinkedIn
+                                        li
+                                            a.icon.brands.fa-mastodon(href="https://infosec.exchange/@buttercup")
+                                                span.label Mastodon
+                                        li
+                                            a.icon.brands.fa-keybase(href="https://keybase.io/team/bcup")
+                                                span.label Keybase
 
 
         footer#footer.wrapper.style1-alt
