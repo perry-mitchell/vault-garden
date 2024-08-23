@@ -5,6 +5,7 @@ html
         meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
         title Vault Garden
         link(rel="stylesheet" href=require("../styles/theme/main.scss"))
+        link(rel="stylesheet" href=require("../styles/site.sass"))
         link(rel="manifest" href=require("../media/manifest.json"))
         link(rel="apple-touch-icon-precomposed" href=require("../media/images/favicon/apple-touch-icon.png"))
         link(rel="icon" type="image/png" sizes="512x512" href=require("../media/images/favicon/favicon-512x512.png"))
@@ -43,8 +44,8 @@ html
             // One
             section#one.wrapper.style2.spotlights
                 section
-                    a.image(href="#")
-                        img(src=require("../media/images/buttercup-512.jpg") alt="" data-position="center center")
+                    a.image(href="#" class="img-a-buttercup")
+                        //- img(src=require("../media/images/buttercup-512.jpg") alt="" data-position="center center")
                     .content
                         .inner
                             h2 Password Management
@@ -55,8 +56,8 @@ html
                                 li
                                     a.button(href="https://buttercup.pw" target="_blank") Buttercup.pw
                 section
-                    a.image(href="#")
-                        img(src=require("../media/images/infrastructure.jpg") alt="" data-position="top center")
+                    a.image(href="#" class="img-a-infrastructure")
+                        //- img(src=require("../media/images/infrastructure.jpg") alt="" data-position="top center")
                     .content
                         .inner
                             h2 Cloud Infrastructure and Services
@@ -67,8 +68,8 @@ html
                                 li
                                     a.button(href="generic.html") Learn more
                 section
-                    a.image(href="#")
-                        img(src=require("../media/images/applications.jpg") alt="" data-position="25% 25%")
+                    a.image(href="#" class="img-a-applications")
+                        //- img(src=require("../media/images/applications.jpg") alt="" data-position="25% 25%")
                     .content
                         .inner
                             h2 Desktop and Mobile Software
