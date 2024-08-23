@@ -23,9 +23,9 @@ html
                         li
                             a(href="#intro") Welcome
                         li
-                            a(href="#one") Who we are
+                            a(href="#focus") Our focus
                         li
-                            a(href="#two") What we do
+                            a(href="#speciality") Our speciality
                         li
                             a(href="#three") Get in touch
 
@@ -33,7 +33,8 @@ html
             // Intro
             section#intro.wrapper.style1.fullscreen.fade-up
                 .inner
-                    h1 Vault Garden
+                    //- h1 Vault Garden
+                    img.heading-logo(src=require("../media/images/logo_main_white.png"))
                     p
                         | The comprehensive web platform development consultancy.
                         | We build highly scalable and secure systems
@@ -42,10 +43,9 @@ html
                         li
                             a.button.scrolly(href="#one") Learn more
             // One
-            section#one.wrapper.style2.spotlights
+            section#focus.wrapper.style2.spotlights
                 section
                     a.image(href="#" class="img-a-buttercup")
-                        //- img(src=require("../media/images/buttercup-512.jpg") alt="" data-position="center center")
                     .content
                         .inner
                             h2 Password Management
@@ -57,7 +57,6 @@ html
                                     a.button(href="https://buttercup.pw" target="_blank") Buttercup.pw
                 section
                     a.image(href="#" class="img-a-infrastructure")
-                        //- img(src=require("../media/images/infrastructure.jpg") alt="" data-position="top center")
                     .content
                         .inner
                             h2 Cloud Infrastructure and Services
@@ -69,7 +68,6 @@ html
                                     a.button(href="generic.html") Learn more
                 section
                     a.image(href="#" class="img-a-applications")
-                        //- img(src=require("../media/images/applications.jpg") alt="" data-position="25% 25%")
                     .content
                         .inner
                             h2 Desktop and Mobile Software
@@ -80,9 +78,9 @@ html
                                 li
                                     a.button(href="generic.html") Learn more
             // Two
-            section#two.wrapper.style3.fade-up
+            section#speciality.wrapper.style3.fade-up
                 .inner
-                    h2 What we do
+                    h2 Our Specialities
                     p
                         | Vault Garden provides a number of different services to help you build and produce your next software project.
                     .features
